@@ -22,7 +22,7 @@ public class Main {
         Downloader.fileDown("https://github.com/ClosedDev/MCServerBuilder/releases/latest/download/MCSB.jar", MCSBPath + "/Temp/MCSB.jar");
 
         File file = new File(MCSBPath + "/Temp/MCSB.jar");
-        File newFile = new File(targetPath + "/MCSB.jar");
+        File newFile = new File(targetPath);
 
         if(newFile.exists()){
             newFile.delete();
