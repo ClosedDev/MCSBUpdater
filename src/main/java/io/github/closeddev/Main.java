@@ -22,7 +22,11 @@ public class Main {
         Downloader.fileDown("https://github.com/ClosedDev/MCServerBuilder/releases/latest/download/MCSB.jar", MCSBPath + "/Temp/MCSB.jar");
 
         File file = new File(MCSBPath + "/Temp/MCSB.jar");
-        File newFile = new File(targetPath + "/Temp/MCSB.jar");
+        File newFile = new File(targetPath + "/MCSB.jar");
+
+        if(newFile.exists()){
+            newFile.delete();
+        }
 
         // 2. FileInputStream, FileOutputStream 준비
         FileInputStream input = new FileInputStream(file);
