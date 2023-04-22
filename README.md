@@ -1,0 +1,2 @@
+# MCSBUpdater
+Updater for MCSB
